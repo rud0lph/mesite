@@ -35,19 +35,45 @@
 
         <!-- Add your site or application content here -->
         <section>
-     <h2>Kmom06: CSS-ramverk och grid layout</h2>
+     <h2>Kmom07: Färdigställ och produktifiera ramverket</h2>
+     <p>Nästan i mål. Jag är helt slut och drömmer om kod. Här är min slutversion av HAL (för den här kursen i alla fall)</p>
+<p><strong>Git/Github<br>
+</strong>I början var det väldigt krångligt med Git och GitHub och jag fick ta bort projekt och börja om den första gången jag försökt få upp HAL, förstod inte riktigt allt och valde att istället för att köra via terminal använda mig av mjukvaran GitHub för Mac. Då började det gå bättre. Jag har använt mig av brancher istället för tags då det inte stöds i gränssnittet och det är blivit lite kladdigt. Men nu har jag lagt ner lite tid på att lära mig mer Git i terminalen och det har varit bra och kul. Taggat några versioner och till mitt nästa projekt som jag laddar upp på GitHub kommer det nog både gå smidigare och vara bättre strukturerat. Jag gillar det skarpt och det är ett enormt kraftfullt sätt att dela kod, versionshantera etc. Det finns ingen direkt logik i mina taggar. Också tagit bort alla brancher efter merge till master så nu finns det en del trasiga länkar i mina förra redovisningar.</p>
+        <p><strong>Summering av HAL</strong><br>
+          Mitt ramverk, HAL, bygger på Lydia men jag har valt en annan filstruktur och i början också en annan databas (MySQL). Dels för att jag inte tyckte om hur Lydias filer är organiserade och dels för att det tvingar mig att sätta mig in i koden ordentligt. Jag har ju varit tvungen att koda annorlunda på sina ställen för att det ska fungera och det ger mig både huvudvärk och en känsla av att faktiskt kunna och lära. KUL! <br>
+  <br>
+     Jag har även valt att använda Twitter Bootstrap för att det har stått på min &rdquo;Att lära mig&rdquo;-lista. Testade först med Bootstrap med LESS men valde bort det. Kommer dock i framtiden testa det igen för jag vill ge det en ordentlig chans, tidsramen gav mig inte det utrymme jag behöver.</p>
+        <p>Mellan KMOM5 och 6 blev utseendet på Hal förändrat och HAL var minst sagt fult efter KMOM6. Medan jag stegvis jobbat mig igenom KMOM7 har jag också lagt ner mycket på att få Hal att se bra ut, kör med basic Twitter Bootstrap utseende och jobbat igenom koden och byt ut en del kod som rör css. </p>
+        <p>Resultatet är jag helt ok nöjd med, men vill verkligen lära mig mer kring hur du kan ändra på Boostrap för att få det exakt som du vill ha, färgval osv osv. Mycket kvar att lära där.</p>
+        <p>Jag har också valt att byta ut databas och kör nu SQLLite, precis som Lydia fast med ett namn-fält i Gästboken. Bytet till SQLLite gjorde jag för att underlätta för installationer och att det &rdquo;bara ska vara och köra&rdquo; med HAL. Känns bra.</p>
+        <p><strong>Testinstallation<br>
+        </strong>        Drog ner dels på min egen domän och dels tills studentservern. Fick ändra på .htaccess på studentservern innan det funkade. Inget strul i sig,  men irriterande. </p>
+<p>Det som ligger på Github använder default tema och default menyer men CCMycontroller ligger med samt mytheme som ett exempel för nya användare och allt som hör till så det var enkelt att koppla på.  Ska bli kul att skriva instruktionerna för hur man ska höra till KMOM08/10</p>
+<p>
+    <p>
+		<a href="https://github.com/tinalogan/HAL/tree/v0.1.4" target="_blank">HAL på Github, tag 0.1.4</a><br>
+      <a href="http://thelincolncircus.com/test/phpmvc/kmom07/hal/" target="_blank">Hal med tema default</a><br>
+      <a href="http://thelincolncircus.com/test/phpmvc/kmom07/myhal/" target="_blank">"MySite", sida med eget tema och egen kontroller, koden hämtad från GitHub.</a><br>
+      <a href="http://www.student.bth.se/~chwk12/hal/" target="_blank">Hal på studentservern, koden hämtad från GitHub. </a><br>
+         
+</p>
+<p>
+<hr>
+</p> 
+        
+        
+<h2>Kmom06: CSS-ramverk och grid layout</h2>
         <p>
-        Jag har läst igenom andras redovisningar kring detta avsnitt och många tycker att less är trevligt och bra. Vilket det säkert är, om det funkar som en vill.
-        Varje gång jag försöker modifiera i style.php så är det något som inte vill sig och antingen så slår inte ändringarna igenom (trots tömd cache etc) eller så när jag backar
-        till ursprungsfilen så vill den inte rendera sig rätt.        
+        Jag har läst igenom andras redovisningar kring detta avsnitt och många tycker att less är trevligt och bra. Vilket det säkert är, om det funkar som en vill. Varje gång jag försöker modifiera i style.less så är det något som inte vill sig och antingen så slår inte ändringarna igenom (trots tömd cache etc) eller så när jag backar till ursprungsfilen så vill den inte rendera sig rätt.
+Hade även problem med att det var fel i style.less filen som jag kopierade rakt av från Lydia (version 0.2.18 och ngn senare också) så de ville inte kompilera.     
         <p> Frustrerande minst sagt. Först visade den inte rätt typsnitt, nu visar den rätt typsnitt men allt innehåll placerar sig
           längst bort till höger. Testade att dra ner en kopia av Lydia version 0.2.18 tror jag det var och smacka upp på mitt webbhotell. Ser bra ut. Och ibland har det sett bra ut för mig med.
         Känslan av att inte ha kontroll irriterar mig oerhört.         
-        <p>Det jag redovisar är jag inte nöjd med. Planen var att gå igenom tutorialen och utifrån Lydias  tema <em>Grid</em> bygga ett eget tema som  	jag kunde vara nöjd med. Det står på min TODO inför sluttampen och paketeringen. Får se om jag ens behåller Less. Diskuterade Less med en kollega på jobbet och han hade jobbat lite med det i ett projekt (stort webb-projekt för stort tv-bolag) men de hade valt att inte jobba med det till slut och plockat bort det. Men jag ger mig inte än. Ska labba lite mer och sen återstår att se hur det paketeras. Jag har testat att titta på mitt ramverk i Chrome, Safari och Firefox. Tömt cache, tagit bort style.less, style.css och style.css.cache och börjat om ett antal gånger. Men den renderar inte som den ska. 
-     <p>Vad tycker du om gridbaserad layout?<br>
+        <p>Det jag redovisar är jag inte nöjd med. Planen var att gå igenom tutorialen och utifrån Lydias  tema <em>Grid</em> bygga ett eget tema som  	jag kunde vara nöjd med. Det står på min TODO inför sluttampen och paketeringen. Får se om jag ens behåller Less. Diskuterade Less med en kollega på jobbet och han hade jobbat lite med det i ett projekt (stort webb-projekt för stort tv-bolag) men de hade valt att inte jobba med det till slut och plockat bort det. Men jag ger mig inte än. Ska labba lite mer och sen återstår att se hur det paketeras. Jag har testat att titta på mitt ramverk i Chrome, Safari och Firefox. Tömt cache, tagit bort style.less, style.css och style.css.cache och börjat om ett antal gånger. Men den renderar inte som den ska. </p>
+     <p>
        De två artiklarna som man skulle läsa, <em>Technical Web Typography: Guidelines and Techniques</em> och <em>Fixed vs. Fluid vs. Elastic Layout: What's The Right One For You? </em> var riktigt bra artiklar och väldigt intressanta. Jobbade igenom tutorialen i den första. Och gridbaserad layout är smart, det blir vansinnigt snyggt och för ögat väldigt vilsamt när det ser rätt ut och ligger rätt. <br>
-     Gillar hur Mos i Lydia hanterar regionerna, att visa dom endast om de har innehåll, kraftfullt.     
-     <p>Vad tycker du om CSS ramverk i allmänhet och vilka erfarenheter har du av dem?<br>
+     Gillar hur Mos i Lydia hanterar regionerna, att visa dom endast om de har innehåll, kraftfullt.  </p>   
+     <p>
        CSS ramverk i allmänhet har jag väldigt lite erfarenhet av, fått tips om Twitters Bootstrap innan så det ligger här och väntar på mig, men än så länge väldigt lite erfarenhet. Eftersom jag kört på Lydias Grid-tema rakt av här använder jag mig av semantic.gs men hinner jag med kommer jag nog bygga ett tema med Twitter Bootstrap till slutpaketeringen.     
 <p>Pst, om det ser rätt ut i din webbrowser så meddela gärna det :)
 <p>
