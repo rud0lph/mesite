@@ -16,7 +16,7 @@
             	<a href="./sourcecode.php" <?php if ($currentPage == 'sourcecode.php') {echo 'id="here"';} ?>>Källkod</a>
             </li>     
             <li>
-            	<a href="../hal" target="_blank"?>HAL</a>
+            	<a href="http://thelincolncircus.com/test/phpmvc/kmom07/hal/" target="_blank"?>HAL</a>
             </li>        
          </ul>
 		

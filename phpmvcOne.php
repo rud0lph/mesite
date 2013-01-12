@@ -53,8 +53,8 @@
     <p>
 		<a href="https://github.com/tinalogan/HAL/tree/v0.1.4" target="_blank">HAL på Github, tag 0.1.4</a><br>
       <a href="http://thelincolncircus.com/test/phpmvc/kmom07/hal/" target="_blank">Hal med tema default</a><br>
-      <a href="http://thelincolncircus.com/test/phpmvc/kmom07/myhal/" target="_blank">"MySite", sida med eget tema och egen kontroller, koden hämtad från GitHub.</a><br>
-      <a href="http://www.student.bth.se/~chwk12/hal/" target="_blank">Hal på studentservern, koden hämtad från GitHub. </a><br>
+      <a href="http://thelincolncircus.com/test/phpmvc/kmom07/myhal/my" target="_blank">"MySite", sida med eget tema och egen kontroller, koden hämtad från GitHub.</a><br>
+      <br>
          
 </p>
 <p>
