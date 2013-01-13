@@ -35,6 +35,79 @@
 
         <!-- Add your site or application content here -->
         <section>
+        <h2>Kmom08/10: Projekt och examination</h2>
+     <p>
+     <h3>Allmänt om projektet</h3>
+     <p>Detta har varit en rolig och tuff resa. Avslutningen av projektet har tagit tid, men jag är också väldigt nöjd med slutresultatet. Hade kunnat... men väljer att bromsa. Detta är bra. Eftersom jag utgått från Lydia men gjort om en del har det varit en del pyssel, detta i samband med att jobba med git och GitHub har skapat ännu mer pyssel. Men efter en hel del testinstallationer och småfix är jag nu i mål. Heja mig!     </p>
+     <h3>K1, K3 och K6</h3>
+     <p>Här hittar du HAL på GitHub: <a href="https://github.com/tinalogan/HAL" target="_blank">https://github.com/tinalogan/HAL</a><br>
+Referensinstallation med eget tema och controller: <a href="http://www.student.bth.se/~chwk12/halfromgit/my" target="_blank">http://www.student.bth.se/~chwk12/halfromgit/my</a> <br>
+Referensinstallation med default tema, en ren HAL: <a href="http://thelincolncircus.com/hal/" target="_blank">http://thelincolncircus.com/hal/</a></p>
+     <p>Du kan logga in med root/root, doe/doe och tina/tina</p>
+     <p><strong>Krav k1: Installera från GitHub</strong><br>
+Git och GitHub har jag jobbat med och använt sen uppgift två. Det har varit mycket learning by doing. Blev en hel del fel i början och jag har jobbat med bransher, inte tags och det blev ganska rörigt. Inför Kmom07 mergade jag alla brancher till master. Rensade bort alla utom master och började sen tagga versioner. Första fick heta v0.1. Nu inför redovisningen har jag senast tagen som heter v0.1.7.<br>
+   </p>
+     <p>Instruktionerna är ganska korta för att installera Hal då det är relativt straight forward. Har jobbat en hel del med ReadMe-filen och instruktionerna, men har inte gjort det övertydligt då jag läste detta inlägget i forumet: <a href="http://dbwebb.se/forum/viewtopic.php?f=35&t=766" target="_blank">http://dbwebb.se/forum/viewtopic.php?f=35&t=766</a><br>
+       <br>
+       Stegen: <br>
+     Klona -&gt; ändra rättigheter på data-mappen -&gt; ev justera .htaccess -&gt; via IndexController köra module/install. <br>
+     <br>
+     Jag har själv testat detta både på min egen domän och på studentservern (här fick jag ändra .htaccess för att det skulle funka). Allt detta testade jag också nitiskt inför KMOM7 för att steget mellan 07 till 08 skulle bli mindre.</p>
+     <p><strong>Krav k3: Ett anpassningsbart ramverk</strong><br>
+       Då jag delvis har följt Lydia har ju kraven om att temat ska kunna anpassas följt med. Men jag valde att gå ifrån semantics och LESS och istället köra med Twitter Boostrap. Har jobbat igenom och lagt en hel del tid på att få min variant av Lydia att fungera fint med Bootstrap. En hel del pill med html-kod här och var för att då det att se riktigt snyggt ut. Jag är väldigt nöjd med slutresultatet. <br>
+       <br>
+       Du kan anpassa logotyp, titel på sidan, navigeringsmenyn, texten i footer, färgval etc.<br>
+       Med HAL har jag valt att skicka med exempel på hur man kan anpassa i form av CCMycontroller och dess berörda filer. Controllern och koden för det temat är bortkommenterat i config.php men finns där som en referens och något att utgå från om man själv vill bygga vidare. <br>
+       <br>
+       Så klart kan man skapa, ändra och logga in som användare. Du kan skapa och ändra innehåll, både som blog och vanlig sida.<br>
+       <br>
+       Alla instruktioner finns i README-filen, återigen skrivna enligt beskrivningen om målgruppen.<br>
+       Jag har en referensinstallation på studentservern. Där är tema, logo, titel, text i footer ändrat etc. Även färgen är annorlunda än default tema. Jag har skapat en användare (tina/tina). Har också skapat nytt innehåll, både blog och statisk sida.<br>
+  </p>
+
+     <p><strong>Krav k6: Projektdokumentation och Referensinstallation</strong><br>
+       HAL har hela tiden varit baserat på Lydia men med mina egna små förändringar. <br>
+     Detta för att jag kände att: </p>
+     <ol>
+       <li>Jag kan för lite PHP för att helt bygga eget ramverk. </li>
+       <li>Gör jag modifieringar av Lydia kommer jag nog lära mig mer och förstå koden bättre. </li>
+       <li>Jag gillade inte filstrukturen och filnamnen i Lydia.</li>
+     </ol>
+     <p>Sagt och gjort. Detta har gett mig både skratt, frustration, grått hår och massa kunskap.<br>
+       Vad skiljer HAL och Lydia åt? Filstrukturen och namnkonventionen är redan nämda. Jag har valt att tydligare separera Modeller, Controllers och Views och lagt dem i olika kataloger. Jag har lagt allt som har med formulärhanteringen (Form-klasserna) i en egen katalog, form. Jag har döpt om site till application, src till core.<br>
+       </p>
+     <p>Namnkonventionen är alla controllers slutar med Controller, i.e. BlogController, alla modeller slutar med Model och alla views heter ngt i stil med user.tpl.php.<br>
+       <br>
+       View har jag också varit noga med att, eftersom de ligger alla i samma katalog, döpa dem logiskt. Alla views som är kopplade till user börjar med just user, i.e. userprofile, userlogin etc. Detsamma för övriga. Kanske kan man separera dem i underkataloger i framtiden? <br>
+       <br>
+       När vi började skriva till databas ville jag testa min domän och mitt webhotells MySQL och valde att koda för det istället. Det har jag både ångrat och gillat. Ångrat för att det själt dyrbar tid då syntaxen varit bråkig med mig. Gillat för att jag, återigen, lärt mig massor. <br>
+       <br>
+       Inför KMOM07 valde jag att köra med SQLLite och kodade stöd för det istället för MySQL. Bytet till SQLLite gjorde jag för att underlätta för installationer och att det &rdquo;bara ska vara och köra&rdquo; med HAL. Känns bra. Det enda som skiljer mot Lydia är att gästboken har ett extra fält, namn. Jag vill veta vem som skriver till mig :)<br>
+       <br>
+       Ett annat aktivt val jag gjort är att köra med Twitter Bootstrap istället. Varför? Det är sjukt snyggt. Det har stått på min &ldquo;att lära mig&rdquo;-lista ett tag och jag ville verkligen få till en snygg layout. Sagt och gjort. Återigen en chans att grotta ner mig i Lydia/Hal koden, bekanta mig mer med den och ändra där jag behövt och resultatet är fin-fint. Finns en hel del kvar att lära mig om Bootstrap dock.<br>
+       <br>
+       Kvaliteten på HAL ser jag som relativt god och jag ser många möjligheter med ramverket. Jag ser faktiskt fler möjligheter än svårigheter och jag kommer nog pilla med det i framtiden för att ändra mer. Kanske kommer jag bryta ut mer saker, döpa om och strukturera om. Definitivt kommer jag testa LESS igen. Började med bootstrap och LESS men upplevde en brist på kontroll, som säkert beror på bristande kunskap. Men jag kan se styrkan i LESS. <br>
+       <br>
+       Jag funderar mycket på separtion av html, php och css. Ibland känns det kladdigt med blandade element på så många platser, men jag har lite känslan av att det är så på webfronten. Back end utvecklingen är ju oftast renare. Kanske kan webutvecklingen också bli mer separerad? Gillar Lydias och Hals fina separation av databas-kod och SQL samt de interfacen som används. <br>
+       <br>
+       En nackdel jag kan se med att frångå Lydia med filstruktur är att jag skulle nog behöva tröska igenom koden igen och kanske förändra för att riktigt stödja min filstruktur. Lösningen som finns funkar, men allt kan alltid bli bättre. Fördelen med katalogstrukturen är att jag upplever att det är lättare att hitta och förstå uppdelningen av klasserna bara genom att titta på strukturen.</p>
+<p>
+  </p>
+    <h3>Tankar om kursen</h3>
+    <p>Kursens förkunskapskrav om man läser idag på BTH.se är de tre andra kurserna i kurspaketet. Det är nog en bra grej. Jag kan inte minnas att det kravet fanns inför HT12, då hade jag ju inte kommit in. </p>
+    <p>Jag tycker ämnet är tokintressant och jag kommer gå kurspaketet nu under 2013 då jag tycker att det är bra innehåll, generellt, men också för att jag vill lära mig mer från grunden. Jag hade nog uppskattat om det fanns mer förklaring kring koden i tutorialen, under visa moment händer det så mycket i koden att det är svårt att riktigt förstå vad som händer, ibland ens varför. </p>
+    <p>Jag kan känna att minimi-kravet (en kopia på Lydia med annat namn i princip) är för lågt. En blandning av eget och Lydia eller en helt egen variant känns mer rimligt med tydliga bitar som <em>måste</em> ingå. </p>
+    <p>Kanske en längre kurs för att kunna fördjupa sig mer i Ramverksbygge, där första 7,5 poängen handlar om att lära sig CodeIgniter eller annat och fokus på vad ramverk och MVC är mer ingående och sen 7,5 poäng bygga Lydia-hybrid/eget ramverk?</p>
+    <p> Sista grejen som stört mig oerhört är den ibland ohyggligt långa väntan på omdöme. Några moment har jag väntat 3 veckor på innan godkännande. För lång tid. Jag behöver kvitto på att jag gör rätt eller är på rätt väg för att hitta lust att jobba. När det är tyst så länge tappar man lite sugen. Men nu sist fick jag toksnabb respons, kul och peppande.<br>
+      <br>
+      På en skala 1 – 10 får kursen 6 Det är en bra kurs men den kan bli mycket bättre.<br>
+      Forumet är för övrigt guld och mos snabba respons där är magiskt fin.</p>
+    <p>Sen önskar jag mig en Ruby och Ruby on Rails kurs i framtiden ;)</p>
+    <p>Toktack för bra kurs men andra ord!
+    <p>        
+    <hr>
+</p> 
+        
      <h2>Kmom07: Färdigställ och produktifiera ramverket</h2>
      <p>Nästan i mål. Jag är helt slut och drömmer om kod. Här är min slutversion av HAL (för den här kursen i alla fall)</p>
 <p><strong>Git/Github<br>
